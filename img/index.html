@@ -1,0 +1,861 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css"/>
+    <link rel="stylesheet" href="style.css">
+<!--    <script-->
+<!--            src="https://code.jquery.com/jquery-3.4.1.min.js"-->
+<!--            integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="-->
+<!--            crossorigin="anonymous"></script>-->
+</head>
+<body>
+<!-------------------------bg -fixed 6 hw--Нужно сделать верстку только под широкоформатные мониторы, с шириной экрана 1200 пикселей или более (то есть ширина контента фиксированная в пикселях).
+Максимальная ширина контейнера с контентом - 1160 пикселей (кроме второго блока с квадратами).-
+js----------------------------------------->
+<header>
+    <div class="top_header">
+        <div class="top_header_container">
+            <div class="top_header_menu_logo">
+                <span class="top_header_menu_text">the</span>
+            </div>
+            <div class="top_header_menu_drop_part">
+                <ul>
+                    <li>home</li>
+                    <li>about</li>
+                    <li>skills</li>
+                    <li>service</li>
+                    <li>work</li>
+                    <li>testimonial</li>
+                    <li>blog</li>
+                    <li>team</li>
+                    <li>contact</li>
+                    <li><i class="fa fa-search"></i></li>
+                </ul>
+            </div>
+            <div class="top_header_menu_finder">
+            </div>
+        </div>
+    </div>
+    <div class="middle_header_text_container">
+          <h3 class="middle_header_text_1line">The Ham is</h3>
+          <h1 class="middle_header_text1_2line">we are creative</h1>
+          <h3 class="middle_header_text1_3line">Just Buy And Enjoy These Awesome Features</h3>
+          <div>
+               <input type="submit" value="EXPLORE NOW" class="common_button">
+               <input type="submit" value='purchase now' class="common_button">
+          </div>
+  </div>
+</header>
+<!-------------------------родительскому диву для од и для евен пропивать бордер
+фонтовсом картинки
+js-------------------------->
+<section class="photo__header">
+    <ul>
+        <li><img src="img/photo__header/hand.png" alt="hand"><h5>Different theme option</h5></li>
+        <li><img src="img/photo__header/diamonds.png" alt="diamonds"><h5>fully customizable</h5></li>
+        <li><img src="img/photo__header/lamp.png" alt="lamp"><h5>unlimited support</h5></li>
+        <li><img src="img/photo__header/device.png" alt="device"><h5>responsive all device</h5></li>
+    </ul>
+</section>
+<!-----------------------2 линии делаем псевдоэлементами
+потом блок с 6 меню нав с юл
+всё флексами чз ектив когда элемент активнывный делаем чз пседдо треуголничек
+js-это табы- треугольник на ектив---->
+<section class="our_services container active_flex">
+    <h3 class="double_line">Our Services</h3>
+        <ul class="our_services_nav active_flex">
+            <li>Web Design</li>
+            <li>Graphic Design</li>
+            <li>Online Support</li>
+            <li>App Design</li>
+            <li>Online Marketing</li>
+            <li>Seo Service</li>
+        </ul>
+        <ul class="our_services_content">
+            <li>
+                <img src="img/web%20design/web-design1.jpg" alt="web-design">
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+                    officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet,
+                    consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua. Excepteur sint occaecat cupidatat non proident,
+                    sunt in culpa qui officia deserunt mollit anim id est laborum. Deserunt
+                    mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adip
+                    isicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua. Excepteur sint occaecat cupidatat non proident, sunt in culpa
+                    qui officia deserunt mollit anim id est laborum.
+                </p>
+            </li>
+            <li>
+                <img src="img/web%20design/web-design2.jpg" alt="web-design">
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+                    officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet,
+                    consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua. Excepteur sint occaecat cupidatat non proident,
+                    sunt in culpa qui officia deserunt mollit anim id est laborum. Deserunt
+                    mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adip
+                    isicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua. Excepteur sint occaecat cupidatat non proident, sunt in culpa
+                    qui officia deserunt mollit anim id est laborum.
+                </p>
+            </li>
+            <li>
+                <img src="img/web%20design/web-design3.jpg" alt="web-design">
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+                    officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet,
+                    consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua. Excepteur sint occaecat cupidatat non proident,
+                    sunt in culpa qui officia deserunt mollit anim id est laborum. Deserunt
+                    mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adip
+                    isicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua. Excepteur sint occaecat cupidatat non proident, sunt in culpa
+                    qui officia deserunt mollit anim id est laborum.
+                </p>
+            </li>
+            <li>
+                <img src="img/web%20design/web-design4.jpg" alt="web-design">
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+                    officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet,
+                    consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua. Excepteur sint occaecat cupidatat non proident,
+                    sunt in culpa qui officia deserunt mollit anim id est laborum. Deserunt
+                    mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adip
+                    isicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua. Excepteur sint occaecat cupidatat non proident, sunt in culpa
+                    qui officia deserunt mollit anim id est laborum.
+                </p>
+            </li>
+            <li>
+                <img src="img/web%20design/web-design5.jpg" alt="web-design">
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+                    officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet,
+                    consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua. Excepteur sint occaecat cupidatat non proident,
+                    sunt in culpa qui officia deserunt mollit anim id est laborum. Deserunt
+                    mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adip
+                    isicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua. Excepteur sint occaecat cupidatat non proident, sunt in culpa
+                    qui officia deserunt mollit anim id est laborum.
+                </p>
+            </li>
+            <li>
+                <img src="img/web%20design/web-design6.jpg" alt="web-design">
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+                    officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet,
+                    consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua. Excepteur sint occaecat cupidatat non proident,
+                    sunt in culpa qui officia deserunt mollit anim id est laborum. Deserunt
+                    mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adip
+                    isicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua. Excepteur sint occaecat cupidatat non proident, sunt in culpa
+                    qui officia deserunt mollit anim id est laborum.
+                </p>
+            </li>
+        </ul>
+</section>
+
+<section class="everything_is_ready">
+    <div class="active_flex">
+        <h2>Everything is ready. just buy and install now</h2>
+        <p>
+            Smooth reliable, responsive ready, perfect portfolio, unique blog
+            layout and many many options for you
+        </p>
+        <input type="submit" value="purchase now" class="common_button">
+    </div>
+</section>
+<!----наводите на элемент и чз транспорм ротет по х оборачиваем картинку чз ховер кнопку
+js----лучше создать разметку на 36 и + дисплей блок
+выбор картинки выбираем чз дата секшин
+---если 36 то кнопка пропадает---------------------------->
+<section class="our_amazing_work active_flex container">
+    <h3 class="double_line">Our Amazing Work</h3>
+    <ul class="our_amazing_work_nav active_flex">
+        <li>All</li>
+        <li>Graphic Design</li>
+        <li>Web Design</li>
+        <li>Lading Pages</li>
+        <li>Wordpress</li>
+    </ul>
+
+    <ul class="our_amazing_work_content active_flex">
+        <li>
+            <img class="our_amazing_work_content_img" src="img/graphic%20design/graphic-design1.jpg" alt="">
+            <div class="our_amazing_work_content_back active_flex">
+                <div class="active_flex">
+                    <i class="active_flex"><img src="img/our_amazing_work_content_back_content/our_amazing_work_content_back_content.png" alt=""></i>
+                    <i class="active_flex fa fa-search"></i>
+                </div>
+                <h5>CREATIVE DESIGN</h5>
+                <p>Graphic Design</p>
+            </div>
+        </li>
+        <li>
+            <img class="our_amazing_work_content_img" src="img/graphic%20design/graphic-design2.jpg" alt="">
+            <div class="our_amazing_work_content_back active_flex">
+                <div class="active_flex">
+                    <i class="active_flex"><img src="img/our_amazing_work_content_back_content/our_amazing_work_content_back_content.png" alt=""></i>
+                    <i class="active_flex fa fa-search"></i>
+                </div>
+                <h5>CREATIVE DESIGN</h5>
+                <p>Graphic Design</p>
+            </div>
+        </li>
+        <li>
+            <img class="our_amazing_work_content_img" src="img/graphic%20design/graphic-design3.jpg" alt="">
+            <div class="our_amazing_work_content_back active_flex">
+                <div class="active_flex">
+                    <i class="active_flex"><img src="img/our_amazing_work_content_back_content/our_amazing_work_content_back_content.png" alt=""></i>
+                    <i class="active_flex fa fa-search"></i>
+                </div>
+                <h5>CREATIVE DESIGN</h5>
+                <p>Graphic Design</p>
+            </div>
+        </li>
+        <li>
+            <img class="our_amazing_work_content_img" src="img/graphic%20design/graphic-design4.jpg" alt="">
+            <div class="our_amazing_work_content_back active_flex">
+                <div class="active_flex">
+                    <i class="active_flex"><img src="img/our_amazing_work_content_back_content/our_amazing_work_content_back_content.png" alt=""></i>
+                    <i class="active_flex fa fa-search"></i>
+                </div>
+                <h5>CREATIVE DESIGN</h5>
+                <p>Web Design</p>
+            </div>
+        </li>
+        <li>
+            <img class="our_amazing_work_content_img" src="img/graphic%20design/graphic-design5.jpg" alt="">
+            <div class="our_amazing_work_content_back active_flex">
+                <div class="active_flex">
+                    <i class="active_flex"><img src="img/our_amazing_work_content_back_content/our_amazing_work_content_back_content.png" alt=""></i>
+                    <i class="active_flex fa fa-search"></i>
+                </div>
+                <h5>CREATIVE DESIGN</h5>
+                <p>Graphic Design</p>
+            </div>
+        </li>
+        <li>
+            <img class="our_amazing_work_content_img" src="img/graphic%20design/graphic-design6.jpg" alt="">
+            <div class="our_amazing_work_content_back active_flex">
+                <div class="active_flex">
+                    <i class="active_flex"><img src="img/our_amazing_work_content_back_content/our_amazing_work_content_back_content.png" alt=""></i>
+                    <i class="active_flex fa fa-search"></i>
+                </div>
+                <h5>CREATIVE DESIGN</h5>
+                <p>Graphic Design</p>
+            </div>
+        </li>
+        <li>
+            <img class="our_amazing_work_content_img" src="img/graphic%20design/graphic-design7.jpg" alt="">
+            <div class="our_amazing_work_content_back active_flex">
+                <div class="active_flex">
+                    <i class="active_flex"><img src="img/our_amazing_work_content_back_content/our_amazing_work_content_back_content.png" alt=""></i>
+                    <i class="active_flex fa fa-search"></i>
+                </div>
+                <h5>CREATIVE DESIGN</h5>
+                <p>Graphic Design</p>
+            </div>
+        </li>
+        <li>
+            <img class="our_amazing_work_content_img" src="img/graphic%20design/graphic-design8.jpg" alt="">
+            <div class="our_amazing_work_content_back active_flex">
+                <div class="active_flex">
+                    <i class="active_flex"><img src="img/our_amazing_work_content_back_content/our_amazing_work_content_back_content.png" alt=""></i>
+                    <i class="active_flex fa fa-search"></i>
+                </div>
+                <h5>CREATIVE DESIGN</h5>
+                <p>Graphic Design</p>
+            </div>
+        </li>
+        <li>
+            <img class="our_amazing_work_content_img" src="img/graphic%20design/graphic-design9.jpg" alt="">
+            <div class="our_amazing_work_content_back active_flex">
+                <div class="active_flex">
+                    <i class="active_flex"><img src="img/our_amazing_work_content_back_content/our_amazing_work_content_back_content.png" alt=""></i>
+                    <i class="active_flex fa fa-search"></i>
+                </div>
+                <h5>CREATIVE DESIGN</h5>
+                <p>Graphic Design</p>
+            </div>
+        </li>
+        <li>
+            <img class="our_amazing_work_content_img" src="img/graphic%20design/graphic-design10.jpg" alt="">
+            <div class="our_amazing_work_content_back active_flex">
+                <div class="active_flex">
+                    <i class="active_flex"><img src="img/our_amazing_work_content_back_content/our_amazing_work_content_back_content.png" alt=""></i>
+                    <i class="active_flex fa fa-search"></i>
+                </div>
+                <h5>CREATIVE DESIGN</h5>
+                <p>Graphic Design</p>
+            </div>
+        </li>
+        <li>
+            <img class="our_amazing_work_content_img" src="img/graphic%20design/graphic-design11.jpg" alt="">
+            <div class="our_amazing_work_content_back active_flex">
+                <div class="active_flex">
+                    <i class="active_flex"><img src="img/our_amazing_work_content_back_content/our_amazing_work_content_back_content.png" alt=""></i>
+                    <i class="active_flex fa fa-search"></i>
+                </div>
+                <h5>CREATIVE DESIGN</h5>
+                <p>Graphic Design</p>
+            </div>
+        </li>
+        <li>
+            <img class="our_amazing_work_content_img" src="img/graphic%20design/graphic-design12.jpg" alt="">
+            <div class="our_amazing_work_content_back active_flex">
+                <div class="active_flex">
+                    <i class="active_flex"><img src="img/our_amazing_work_content_back_content/our_amazing_work_content_back_content.png" alt=""></i>
+                    <i class="active_flex fa fa-search"></i>
+                </div>
+                <h5>CREATIVE DESIGN</h5>
+                <p>Graphic Design</p>
+            </div>
+        </li>
+        <li>
+            <img class="our_amazing_work_content_img" src="img/web%20design/web-design1.jpg" alt="">
+            <div class="our_amazing_work_content_back active_flex">
+                <div class="active_flex">
+                    <i class="active_flex"><img src="img/our_amazing_work_content_back_content/our_amazing_work_content_back_content.png" alt=""></i>
+                    <i class="active_flex fa fa-search"></i>
+                </div>
+                <h5>CREATIVE DESIGN</h5>
+                <p>Web Design</p>
+            </div>
+        </li>
+        <li>
+            <img class="our_amazing_work_content_img" src="img/web%20design/web-design2.jpg" alt="">
+            <div class="our_amazing_work_content_back active_flex">
+                <div class="active_flex">
+                    <i class="active_flex"><img src="img/our_amazing_work_content_back_content/our_amazing_work_content_back_content.png" alt=""></i>
+                    <i class="active_flex fa fa-search"></i>
+                </div>
+                <h5>CREATIVE DESIGN</h5>
+                <p>Web Design</p>
+            </div>
+        </li>
+        <li>
+            <img class="our_amazing_work_content_img" src="img/web%20design/web-design3.jpg" alt="">
+            <div class="our_amazing_work_content_back active_flex">
+                <div class="active_flex">
+                    <i class="active_flex"><img src="img/our_amazing_work_content_back_content/our_amazing_work_content_back_content.png" alt=""></i>
+                    <i class="active_flex fa fa-search"></i>
+                </div>
+                <h5>CREATIVE DESIGN</h5>
+                <p>Web Design</p>
+            </div>
+        </li>
+        <li>
+            <img class="our_amazing_work_content_img" src="img/web%20design/web-design4.jpg" alt="">
+            <div class="our_amazing_work_content_back active_flex">
+                <div class="active_flex">
+                    <i class="active_flex"><img src="img/our_amazing_work_content_back_content/our_amazing_work_content_back_content.png" alt=""></i>
+                    <i class="active_flex fa fa-search"></i>
+                </div>
+                <h5>CREATIVE DESIGN</h5>
+                <p>Web Design</p>
+            </div>
+        </li>
+        <li>
+            <img class="our_amazing_work_content_img" src="img/web%20design/web-design5.jpg" alt="">
+            <div class="our_amazing_work_content_back active_flex">
+                <div class="active_flex">
+                    <i class="active_flex"><img src="img/our_amazing_work_content_back_content/our_amazing_work_content_back_content.png" alt=""></i>
+                    <i class="active_flex fa fa-search"></i>
+                </div>
+                <h5>CREATIVE DESIGN</h5>
+                <p>Web Design</p>
+            </div>
+        </li>
+        <li>
+            <img class="our_amazing_work_content_img" src="img/web%20design/web-design6.jpg" alt="">
+            <div class="our_amazing_work_content_back active_flex">
+                <div class="active_flex">
+                    <i class="active_flex"><img src="img/our_amazing_work_content_back_content/our_amazing_work_content_back_content.png" alt=""></i>
+                    <i class="active_flex fa fa-search"></i>
+                </div>
+                <h5>CREATIVE DESIGN</h5>
+                <p>Web Design</p>
+            </div>
+        </li>
+        <li>
+            <img class="our_amazing_work_content_img" src="img/web%20design/web-design7.jpg" alt="">
+            <div class="our_amazing_work_content_back active_flex">
+                <div class="active_flex">
+                    <i class="active_flex"><img src="img/our_amazing_work_content_back_content/our_amazing_work_content_back_content.png" alt=""></i>
+                    <i class="active_flex fa fa-search"></i>
+                </div>
+                <h5>CREATIVE DESIGN</h5>
+                <p>Web Design</p>
+            </div>
+        </li>
+        <li>
+            <img class="our_amazing_work_content_img" src="img/landing%20page/landing-page1.jpg" alt="">
+            <div class="our_amazing_work_content_back active_flex">
+                <div class="active_flex">
+                    <i class="active_flex"><img src="img/our_amazing_work_content_back_content/our_amazing_work_content_back_content.png" alt=""></i>
+                    <i class="active_flex fa fa-search"></i>
+                </div>
+                <h5>CREATIVE DESIGN</h5>
+                <p>Lading Pages</p>
+            </div>
+        </li>
+        <li>
+            <img class="our_amazing_work_content_img" src="img/landing%20page/landing-page2.jpg" alt="">
+            <div class="our_amazing_work_content_back active_flex">
+                <div class="active_flex">
+                    <i class="active_flex"><img src="img/our_amazing_work_content_back_content/our_amazing_work_content_back_content.png" alt=""></i>
+                    <i class="active_flex fa fa-search"></i>
+                </div>
+                <h5>CREATIVE DESIGN</h5>
+                <p>Lading Pages</p>
+            </div>
+        </li>
+        <li>
+            <img class="our_amazing_work_content_img" src="img/landing%20page/landing-page3.jpg" alt="">
+            <div class="our_amazing_work_content_back active_flex">
+                <div class="active_flex">
+                    <i class="active_flex"><img src="img/our_amazing_work_content_back_content/our_amazing_work_content_back_content.png" alt=""></i>
+                    <i class="active_flex fa fa-search"></i>
+                </div>
+                <h5>CREATIVE DESIGN</h5>
+                <p>Lading Pages</p>
+            </div>
+        </li>
+        <li>
+            <img class="our_amazing_work_content_img" src="img/landing%20page/landing-page4.jpg" alt="">
+            <div class="our_amazing_work_content_back active_flex">
+                <div class="active_flex">
+                    <i class="active_flex"><img src="img/our_amazing_work_content_back_content/our_amazing_work_content_back_content.png" alt=""></i>
+                    <i class="active_flex fa fa-search"></i>
+                </div>
+                <h5>CREATIVE DESIGN</h5>
+                <p>Lading Pages</p>
+            </div>
+        </li>
+        <li>
+            <img class="our_amazing_work_content_img" src="img/landing%20page/landing-page5.jpg" alt="">
+            <div class="our_amazing_work_content_back active_flex">
+                <div class="active_flex">
+                    <i class="active_flex"><img src="img/our_amazing_work_content_back_content/our_amazing_work_content_back_content.png" alt=""></i>
+                    <i class="active_flex fa fa-search"></i>
+                </div>
+                <h5>CREATIVE DESIGN</h5>
+                <p>Lading Pages</p>
+            </div>
+        </li>
+        <li>
+            <img class="our_amazing_work_content_img" src="img/landing%20page/landing-page6.jpg" alt="">
+            <div class="our_amazing_work_content_back active_flex">
+                <div class="active_flex">
+                    <i class="active_flex"><img src="img/our_amazing_work_content_back_content/our_amazing_work_content_back_content.png" alt=""></i>
+                    <i class="active_flex fa fa-search"></i>
+                </div>
+                <h5>CREATIVE DESIGN</h5>
+                <p>Lading Pages</p>
+            </div>
+        </li>
+        <li>
+            <img class="our_amazing_work_content_img" src="img/landing%20page/landing-page7.jpg" alt="">
+            <div class="our_amazing_work_content_back active_flex">
+                <div class="active_flex">
+                    <i class="active_flex"><img src="img/our_amazing_work_content_back_content/our_amazing_work_content_back_content.png" alt=""></i>
+                    <i class="active_flex fa fa-search"></i>
+                </div>
+                <h5>CREATIVE DESIGN</h5>
+                <p>Lading Pages</p>
+            </div>
+        </li>
+        <li>
+            <img class="our_amazing_work_content_img" src="img/wordpress/wordpress1.jpg" alt="">
+            <div class="our_amazing_work_content_back active_flex">
+                <div class="active_flex">
+                    <i class="active_flex"><img src="img/our_amazing_work_content_back_content/our_amazing_work_content_back_content.png" alt=""></i>
+                    <i class="active_flex fa fa-search"></i>
+                </div>
+                <h5>CREATIVE DESIGN</h5>
+                <p>Wordpress</p>
+            </div>
+        </li>
+        <li>
+            <img class="our_amazing_work_content_img" src="img/wordpress/wordpress2.jpg" alt="">
+            <div class="our_amazing_work_content_back active_flex">
+                <div class="active_flex">
+                    <i class="active_flex"><img src="img/our_amazing_work_content_back_content/our_amazing_work_content_back_content.png" alt=""></i>
+                    <i class="active_flex fa fa-search"></i>
+                </div>
+                <h5>CREATIVE DESIGN</h5>
+                <p>Wordpress</p>
+            </div>
+        </li>
+        <li>
+            <img class="our_amazing_work_content_img" src="img/wordpress/wordpress3.jpg" alt="">
+            <div class="our_amazing_work_content_back active_flex">
+                <div class="active_flex">
+                    <i class="active_flex"><img src="img/our_amazing_work_content_back_content/our_amazing_work_content_back_content.png" alt=""></i>
+                    <i class="active_flex fa fa-search"></i>
+                </div>
+                <h5>CREATIVE DESIGN</h5>
+                <p>Wordpress</p>
+            </div>
+        </li>
+        <li>
+            <img class="our_amazing_work_content_img" src="img/wordpress/wordpress4.jpg" alt="">
+            <div class="our_amazing_work_content_back active_flex">
+                <div class="active_flex">
+                    <i class="active_flex"><img src="img/our_amazing_work_content_back_content/our_amazing_work_content_back_content.png" alt=""></i>
+                    <i class="active_flex fa fa-search"></i>
+                </div>
+                <h5>CREATIVE DESIGN</h5>
+                <p>Wordpress</p>
+            </div>
+        </li>
+        <li>
+            <img class="our_amazing_work_content_img" src="img/wordpress/wordpress5.jpg" alt="">
+            <div class="our_amazing_work_content_back active_flex">
+                <div class="active_flex">
+                    <i class="active_flex"><img src="img/our_amazing_work_content_back_content/our_amazing_work_content_back_content.png" alt=""></i>
+                    <i class="active_flex fa fa-search"></i>
+                </div>
+                <h5>CREATIVE DESIGN</h5>
+                <p>Wordpress</p>
+            </div>
+        </li>
+        <li>
+            <img class="our_amazing_work_content_img" src="img/wordpress/wordpress6.jpg" alt="">
+            <div class="our_amazing_work_content_back active_flex">
+                <div class="active_flex">
+                    <i class="active_flex"><img src="img/our_amazing_work_content_back_content/our_amazing_work_content_back_content.png" alt=""></i>
+                    <i class="active_flex fa fa-search"></i>
+                </div>
+                <h5>CREATIVE DESIGN</h5>
+                <p>Wordpress</p>
+            </div>
+        </li>
+        <li>
+            <img class="our_amazing_work_content_img" src="img/wordpress/wordpress7.jpg" alt="">
+            <div class="our_amazing_work_content_back active_flex">
+                <div class="active_flex">
+                    <i class="active_flex"><img src="img/our_amazing_work_content_back_content/our_amazing_work_content_back_content.png" alt=""></i>
+                    <i class="active_flex fa fa-search"></i>
+                </div>
+                <h5>CREATIVE DESIGN</h5>
+                <p>Wordpress</p>
+            </div>
+        </li>
+        <li>
+            <img class="our_amazing_work_content_img" src="img/wordpress/wordpress8.jpg" alt="">
+            <div class="our_amazing_work_content_back active_flex">
+                <div class="active_flex">
+                    <i class="active_flex"><img src="img/our_amazing_work_content_back_content/our_amazing_work_content_back_content.png" alt=""></i>
+                    <i class="active_flex fa fa-search"></i>
+                </div>
+                <h5>CREATIVE DESIGN</h5>
+                <p>Wordpress</p>
+            </div>
+        </li>
+        <li>
+            <img class="our_amazing_work_content_img" src="img/wordpress/wordpress9.jpg" alt="">
+            <div class="our_amazing_work_content_back active_flex">
+                <div class="active_flex">
+                    <i class="active_flex"><img src="img/our_amazing_work_content_back_content/our_amazing_work_content_back_content.png" alt=""></i>
+                    <i class="active_flex fa fa-search"></i>
+                </div>
+                <h5>CREATIVE DESIGN</h5>
+                <p>Wordpress</p>
+            </div>
+        </li>
+        <li>
+            <img class="our_amazing_work_content_img" src="img/wordpress/wordpress10.jpg" alt="">
+            <div class="our_amazing_work_content_back active_flex">
+                <div class="active_flex">
+                    <i class="active_flex"><img src="img/our_amazing_work_content_back_content/our_amazing_work_content_back_content.png" alt=""></i>
+                    <i class="active_flex fa fa-search"></i>
+                </div>
+                <h5>CREATIVE DESIGN</h5>
+                <p>Wordpress</p>
+            </div>
+        </li>
+    </ul>
+
+
+    <input type="submit" value="+ Load More" class="common_button">
+
+</section>
+<!-----------------можно гридами как в дз 3
+8 блоков----
+js----------------------------------------------->
+<section class="breaking_news container active_flex container">
+
+    <h3 class="double_line">Breaking News</h3>
+
+    <ul class="active_flex">
+        <li>
+            <img class="our_amazing_work_content_img" src="img/wordpress/wordpress10.jpg" alt="">
+            <div class="active_flex">
+                <p>12</p>
+                <p>Feb</p>
+            </div>
+            <h5>Amazing Image Post</h5>
+            <span>By admin</span>
+            <span>2 comment</span>
+        </li>
+        <li>
+            <div class="breaking_news_photo active_flex">
+                <span>12 Feb</span>
+            </div>
+            <h5>Amazing Image Post</h5>
+            <span>By admin</span>
+            <span>2 comment</span>
+        </li>
+        <li>
+            <div class="breaking_news_photo active_flex">
+                <span>12 Feb</span>
+            </div>
+            <h5>Amazing Image Post</h5>
+            <span>By admin</span>
+            <span>2 comment</span>
+        </li>
+        <li>
+            <div class="breaking_news_photo active_flex">
+                <span>12 Feb</span>
+            </div>
+            <h5>Amazing Image Post</h5>
+            <span>By admin</span>
+            <span>2 comment</span>
+        </li>
+        <li>
+            <div class="breaking_news_photo active_flex">
+                <span>12 Feb</span>
+            </div>
+            <h5>Amazing Image Post</h5>
+            <span>By admin</span>
+            <span>2 comment</span>
+        </li>
+        <li>
+            <div class="breaking_news_photo active_flex">
+                <span>12 Feb</span>
+            </div>
+            <h5>Amazing Image Post</h5>
+            <span>By admin</span>
+            <span>2 comment</span>
+        </li>
+        <li>
+            <div class="breaking_news_photo active_flex">
+                <span>12 Feb</span>
+            </div>
+            <h5>Amazing Image Post</h5>
+            <span>By admin</span>
+            <span>2 comment</span>
+        </li>
+        <li>
+            <div class="breaking_news_photo active_flex">
+                <span>12 Feb</span>
+            </div>
+            <h5>Amazing Image Post</h5>
+            <span>By admin</span>
+            <span>2 comment</span>
+        </li>
+    </ul>
+</section>
+<!-------------------------картинка имеет 2 бордера чз псевдоклас... или бордер и аутлайн
+подымаем картинку елан селф
+при наведении меняем цвет стрелок
+js-------------делаем гридами как в домашке
+js--карусель подымаем вверх добавляем рамку .. анимацию можем делать чз жуйквери или жс
+слайдей хов ту юз гугл фок бек граундов----------------------------------------->
+<section class="what_people_say_about_theHam">
+
+        <h3 class="double_line">What People Say About theHam</h3>
+        <img src="" alt="">
+
+        <p>Integer dignissim, augue tempus ultricies luctus, quam dui laoreet sem,
+            non dictum odio nisi quis massa. Morbi pulvinar odio eget aliquam facilisis.
+            Tempus ultricies luctus, quam dui laoreet sem, non dictum odio nisi quis massa.
+            Morbi pulvinar odio eget aliquam facilisis.</p>
+
+        <ul>
+            <li><h5>Hasan Ali</h5><p>UX Designer</p></li>
+            <li><h5>Hasan Ali</h5><p>UX Designer</p></li>
+            <li><h5>Hasan Ali</h5><p>UX Designer</p></li>
+            <li><h5>Hasan Ali</h5><p>UX Designer</p></li>
+            <li><h5>Hasan Ali</h5><p>UX Designer</p></li>
+            <li><h5>Hasan Ali</h5><p>UX Designer</p></li>
+            <li><h5>Hasan Ali</h5><p>UX Designer</p></li>
+            <li><h5>Hasan Ali</h5><p>UX Designer</p></li>
+            <li><h5>Hasan Ali</h5><p>UX Designer</p></li>
+        </ul>
+
+        <img src="" alt="">
+
+        <ul>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+
+</section>
+----------------------------------------------------->
+
+
+    <section class="Gallery of best images">
+        <h3 class="double_line">Gallery of best images</h3>
+        <ul>
+            <li>
+                <ul><img src="" alt="">
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </li>
+            <li>
+                <ul><img src="" alt="">
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </li>
+            <li>
+                <ul><img src="" alt="">
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </li>
+            <li>
+                <ul><img src="" alt="">
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </li>
+            <li>
+                <ul><img src="" alt="">
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </li>
+            <li>
+                <ul><img src="" alt="">
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </li>
+            <li>
+                <ul><img src="" alt="">
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </li>
+            <li>
+                <ul><img src="" alt="">
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </li>
+        </ul>
+        <input type="submit" value="Load More" class="loadButton">
+    </section>
+
+<footer>
+    <div class="Copyright"></div>
+</footer>
+
+<script src="main.js"></script>
+
+</body>
+</html>
