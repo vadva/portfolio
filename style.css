@@ -537,7 +537,7 @@ header{
     background-size: cover;
     flex-direction:column;
     justify-content: space-between;
-    height: 851px;
+    /* height: 851px; */
 }
 
 .container_contact{
