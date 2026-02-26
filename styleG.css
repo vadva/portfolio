@@ -1,0 +1,238 @@
+/* ======================
+GLOBAL STYLES
+====================== */
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    background: linear-gradient(135deg,#020617,#0b1120,#020617);
+    color:white;
+    margin:0;
+    scroll-behavior:smooth;
+}
+
+*{
+    box-sizing:border-box;
+    transition:.35s ease;
+}
+
+.container{
+    max-width:1200px;
+    margin:auto;
+}
+
+/* ======================
+HEADER NAV
+====================== */
+
+.top_header{
+    position:fixed;
+    top:0;
+    width:100%;
+    z-index:999;
+    backdrop-filter: blur(18px);
+    background:rgba(2,6,23,.75);
+}
+
+.top_header_container{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px;
+}
+
+.top_header_menu_drop_part ul{
+    display:flex;
+    gap:40px;
+}
+
+.top_header_menu_drop_part a{
+    color:white;
+    text-decoration:none;
+    letter-spacing:2px;
+    font-size:14px;
+}
+
+.top_header_menu_drop_part a:hover{
+    color:#18cfab;
+}
+
+/* ======================
+HERO SECTION
+====================== */
+
+header{
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    padding:0 25px;
+}
+
+.middle_header_text_container{
+    max-width:900px;
+}
+
+.middle_header_text_1line{
+    font-size:28px;
+    opacity:.7;
+}
+
+.middle_header_text1_2line{
+    font-size:90px;
+    font-weight:800;
+    background:linear-gradient(90deg,#18cfab,#3b82f6);
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
+    margin:20px 0;
+}
+
+.middle_header_text1_3line{
+    font-size:18px;
+    line-height:1.8;
+    max-width:700px;
+    margin:auto;
+}
+
+/* ======================
+FEATURE ICONS
+====================== */
+
+.photo__header ul{
+    display:flex;
+    justify-content:center;
+    gap:80px;
+    flex-wrap:wrap;
+    padding:80px 20px;
+}
+
+.photo__header li{
+    padding:35px;
+    border-radius:30px;
+    background:rgba(255,255,255,.03);
+    backdrop-filter: blur(15px);
+    border:1px solid rgba(255,255,255,.05);
+    text-align:center;
+    cursor:pointer;
+}
+
+.photo__header li:hover{
+    transform:translateY(-15px);
+    background:rgba(255,255,255,.08);
+}
+
+/* ======================
+SKILLS SECTION
+====================== */
+
+.double_line{
+    font-size:42px;
+    text-align:center;
+    margin:80px 0 40px;
+}
+
+.our_services_nav{
+    display:flex;
+    justify-content:center;
+    gap:25px;
+    flex-wrap:wrap;
+}
+
+.our_services_nav li{
+    padding:12px 28px;
+    border-radius:30px;
+    background:rgba(255,255,255,.05);
+    cursor:pointer;
+}
+
+.our_services_nav li:hover{
+    background:#18cfab;
+    color:black;
+}
+
+/* ======================
+PORTFOLIO CARDS
+====================== */
+
+.our_amazing_work_content{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+    gap:40px;
+    padding:60px 20px;
+}
+
+.our_amazing_work_content li{
+    position:relative;
+    border-radius:30px;
+    overflow:hidden;
+}
+
+.our_amazing_work_content_img{
+    width:100%;
+    height:320px;
+    object-fit:cover;
+}
+
+.our_amazing_work_content_back{
+    position:absolute;
+    inset:0;
+    background:linear-gradient(to top,rgba(0,0,0,.95),transparent);
+    opacity:0;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+}
+
+.our_amazing_work_content li:hover .our_amazing_work_content_back{
+    opacity:1;
+}
+
+/* Icons */
+
+.our_amazing_work_content_back a{
+    color:white;
+    font-size:26px;
+    margin:12px;
+}
+
+/* ======================
+CONTACT SECTION
+====================== */
+
+.container_contact{
+    max-width:900px;
+    margin:auto;
+    padding:40px 20px 80px;
+    line-height:1.8;
+    font-size:18px;
+    opacity:.9;
+}
+
+/* ======================
+FOOTER
+====================== */
+
+footer{
+    background:#020617;
+    text-align:center;
+    padding:50px;
+    color:#64748b;
+}
+
+/* ======================
+RESPONSIVE
+====================== */
+
+@media(max-width:768px){
+
+.middle_header_text1_2line{
+    font-size:48px;
+}
+
+.photo__header ul{
+    gap:30px;
+}
+
+}

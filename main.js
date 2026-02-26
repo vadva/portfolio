@@ -6,6 +6,45 @@ let whatPeopleSayMenuPhotos = [...document.querySelectorAll('.what_people_say_ab
 
 let whatPeopleSayMenuArrows = [...document.querySelectorAll('.what_people_say_about_theHam_photos span' )];
 
+
+const words = [
+    "Hello, nice to meet you!",                 // English
+    "Bonjour, ravi de vous rencontrer!",        // French
+    "Hola, mucho gusto!",                      // Spanish
+    "Привіт, приємно познайомитися!",          // Ukrainian
+    "你好，很高兴认识你!",                        // Chinese (Simplified)
+    "नमस्ते, आपसे मिलकर खुशी हुई!",             // Hindi
+    "Kamusta, ikinagagalak kitang makilala!",  // Tagalog
+    "Hallo, freut mich dich kennenzulernen!",  // German
+    "Ciao, piacere di conoscerti!"             // Italian
+];;
+
+let i = 0;
+let wordIndex = 0;
+let currentText = "";
+
+function type(){
+    if(wordIndex === words.length){
+        wordIndex = 0;
+    }
+
+    let currentWord = words[wordIndex];
+
+    currentText = currentWord.substring(0,i);
+    document.getElementById("typingText").innerHTML = currentText;
+
+    i++;
+
+    if(i > currentWord.length){
+        i = 0;
+        wordIndex++;
+    }
+
+    setTimeout(type,220);
+}
+
+type();
+
 //------------------------------------------------common_function
 let searchAnalogItem=function(arrMenu, arrAnalog, counter){
     arrAnalog.forEach(item=>{

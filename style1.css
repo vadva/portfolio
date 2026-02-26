@@ -1,280 +1,160 @@
+
+/* =============================
+SUPER PRO GLOBAL STYLE
+============================= */
+
 body{
-    /*width: 1920px;*/
-    /* min-width: 1200px; */
-    width: 100%;
-    margin: 0 auto;
-}
-.container{
-    /* width: 1160px; */
-    
-    margin: 0 auto;
+    font-family: 'Montserrat', sans-serif;
+    background: linear-gradient(135deg,#020617,#020b1c,#020617);
+    color:white;
+    overflow-x:hidden;
 }
 
-/*------------------------------------------common active_flex----------------------*/
-.active_flex{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+/* Smooth animation base */
+*{
+    box-sizing:border-box;
 }
-.noActive{
-    display: none;
-}
-/*------------------------------------------common button----------------------*/
-.common_button{
-    display: inline-block;
-    background-color: #18cfab;
-    color: #ffffff;
-    width: 166px;
-    height: 61px;
-    font-weight: bold;
-    font-family: ﻿AdobeInvisFont, ﻿Montserrat-Bold, ﻿Courier,sans-serif;
-    border-radius: 3px;
-    text-transform: uppercase;
-    border: none;
-    box-shadow: 0 -4px 0 0 #ffffff;
-}
-.common_button:hover{
-    background-color: #00cbf6;
-    cursor: pointer;
-}
-/*------------------------------------------common double_line----------------------*/
-.double_line{
-    font-size: 34px;
-    color: #4e4e4e;
-    letter-spacing: 1px;
-    font-family: ﻿AdobeInvisFont, ﻿Montserrat-Regular, ﻿Courier,sans-serif;
-    margin: 100px auto;
-    position: relative;
-}
-.double_line:before{
-    position: absolute;
-    content: '';
-    width: 76px;
-    border-top: 1px solid #18cfab;
-    top: 63px;
-    left: calc(50% - calc(38px + 6px));
-    margin-bottom: 3px;
-}
-.double_line:after{
-    position: absolute;
-    content: '';
-    width: 76px;
-    border-top: 1px solid #18cfab;
-    top: 67px;
-    left: calc(50% - calc(38px - 6px));
-}
-/*-------------------------------------------------HEADER----------------------*/
+
+/* =============================
+FLOATING BACKGROUND EFFECT
+============================= */
+
 header{
-    background-image: url("img/Sections background/section-1(header).jpg");
-    opacity: 0.9;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    height: 60vh;
-    position: relative;
-}
-.top_header{
-    background: rgba(0, 0, 0, 0.7);
-    height: 120px;
-    width: 100%;
-    position: fixed;
-    top:-15px;
-    z-index: 2;
-}
-.top_header_container {
-    display: inline-block;
-    margin-left: 20%;
-    position: absolute;
-    top: calc(50% - 13px);
-    }
-/*-------------------------------------------------header logo---------------------*/
-.top_header_menu_logo{
-    content: '';
-    color: #ffffff;
-    font-size: 28px;
-    display: flex;
-    flex-direction: row;
-    position: relative;
-    cursor: pointer;
-}
-.top_header_menu_logo::after{
-    content: '';
-    border-bottom: 28px solid #18cfab ;
-    transition: all ,2s;
-    border-right: 10px solid transparent;
-    border-left: 10px solid transparent;
-    transform: rotate(90deg);
-}
-.top_header_container:hover .top_header_menu_logo::after {
-    width: 28px;
-    border-right: 20px solid transparent;
-    border-left: 20px solid transparent;
-    transform: rotate(90deg);
-    margin-left: -40px;
-}
-.top_header_menu_logo::before{
-    content: '';
-    width: 5px;
-    border-bottom: 28px solid #18cfab;
-    transform: rotate(90deg);
- }
-.top_header_container:hover .top_header_menu_logo::before{
-    width: 28px;
-    border-bottom: 28px solid #18cfab;
-    border-right: 30px solid transparent;
-    border-left: 30px solid transparent;
-    transform: rotate(-90deg);
-    transition: all ,1s;
-    cursor: pointer;
-
-}
-.top_header_menu_text {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 24px;
-    color: #ffffff;
-    position: absolute;
-    left: 37px;
-    z-index: 1;
-    width: 235px;
-}
-.top_header_menu_text::before{
-    content:'Hello';
-    font-weight: bold;
-    color: #ffffff;
-    font-size: 28px;
-    /* padding-right: 24px; */
-    margin-left: -10px;
-}
-.top_header_menu_text::after{
-    content:'';
-    font-weight: bold;
-    color: #18cfab;
-    font-size: 24px;
- }
-/*----------------------------------------------header drop part---------------------*/
-.top_header_menu_drop_part{
-    display: inline-block;
-    width: 669px;
-    position: absolute;
-    top: calc(50% - 5px);
-    left: 350px;
-}
-.top_header_menu_drop_part li{
-    display: inline-block;
-    height: 64px;
-    color: #18cfab;
-    text-transform: uppercase;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 22px;
-    margin-right: 17px;
-    font-weight: bold;
-    vertical-align: top;
-}
-
-.top_header_menu_drop_part a{
-  color: #18cfab;
-  text-decoration: none;
-}
-
-.top_header_menu_drop_part li:hover{
-    color: #18cfab;
-    border-bottom: 3px solid #18cfab;
-    cursor: pointer;
-}
-
-@media screen and (max-width: 600px){
-    .top_header_menu_drop_part{
-        display: none;
-
-    }
-}
-
-/*----------------------------------------middle_header_text_container----------------------*/
-.middle_header_text_container{
-    height: 402px;
-    width: 100%;
-    position: absolute;
-    top:30%;
-    /* left: 50vh; */
-
-    }
-
-.middle_header_text_1line{
-    font-weight: bold;
-    text-transform: uppercase;
-    font-size: 24px;
-    color: #ffffff;
-    font-family: ﻿AdobeInvisFont, ﻿Montserrat-Bold, ﻿Courier,sans-serif;
-    text-align:center ;
-    padding-bottom:45px;
-}
-/* .middle_header_text_1line:after{
-    content:' bevziuk';
-    color:#18cfab;
-} */
-.middle_header_text1_2line{
-    font-weight: bold;
-    text-transform: uppercase;
-    font-size: 57px;
-    color: #ffffff;
-    font-family: ﻿AdobeInvisFont, ﻿Montserrat-Bold, ﻿Courier,sans-serif;
-    text-align:center ;
-    padding-bottom:37px;
-}
-.middle_header_text1_3line{
-    text-transform: capitalize;
-    font-size: 32px;
-    color: #ffffff;
-    font-family: ﻿AdobeInvisFont, ﻿Courier, ﻿Montserrat-Light,sans-serif;
-    text-align:center ;
-    padding-bottom:50px;
-}
-.middle_header_text_container div{
-    display: flex;
+    position:relative;
+    height:100vh;
+    display:flex;
     justify-content:center;
-    }
+    align-items:center;
+    text-align:center;
+}
 
-.common_button + input{
-    margin-left:28px;
+/* Floating particles */
+header::before{
+    content:"";
+    position:absolute;
+    width:600px;
+    height:600px;
+    background: radial-gradient(circle,#18cfab55,transparent 60%);
+    top:-200px;
+    left:-200px;
+    animation:float 12s infinite alternate;
 }
-/*--------------------------------------------PHOTO OF HEADER-------------------------*/
-.photo__header ul{
-    display: flex;
-    width: 100%;
-    height: 367px;
-    flex-direction: row;
+
+header::after{
+    content:"";
+    position:absolute;
+    width:600px;
+    height:600px;
+    background: radial-gradient(circle,#3b82f655,transparent 60%);
+    bottom:-200px;
+    right:-200px;
+    animation:float 15s infinite alternate-reverse;
 }
-.photo__header li {
-    width: 25%;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    text-align: center;
-    font-weight: bold;
-    letter-spacing: 1px;
-    font-size: 18px;
-    flex-direction: column;
-    text-transform: uppercase;
-    font-family: ﻿AdobeInvisFont, ﻿Montserrat-Bold, ﻿Courier,sans-serif;
-}
-.photo__header li:nth-child(odd){
-    background-color: #1c2a33;
-    color:#18cfab;
-    border-top: 7px solid #18cfab;
+
+@keyframes float{
+    from{
+        transform:translateY(0px);
     }
-.photo__header li:nth-child(even){
-    background-color: #18cfab;
-    color:#ffffff;
-    border-top: 7px solid #ffffff;
+    to{
+        transform:translateY(80px);
+    }
 }
-/* .photo__header h5:nth-child(odd){
-      margin-bottom:120px;
-      margin-top: 48px;
-  }
-.photo__header h5:nth-child(even){
-    margin-bottom:120px;
-    margin-top: 59px;
-} */
+
+/* =============================
+HERO TEXT ANIMATION
+============================= */
+
+.middle_header_text_container{
+    position:relative;
+    z-index:2;
+    max-width:900px;
+}
+
+/* Fade in animation */
+.hero_animate{
+    opacity:0;
+    animation:fadeUp 1.5s forwards;
+}
+
+.hero_animate.delay1{
+    animation-delay:.4s;
+}
+
+.hero_animate.delay2{
+    animation-delay:.8s;
+}
+
+@keyframes fadeUp{
+    from{
+        opacity:0;
+        transform:translateY(40px);
+    }
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+
+/* Name Title */
+
+.middle_header_text1_2line{
+    font-size:90px;
+    font-weight:800;
+
+    background:linear-gradient(90deg,#18cfab,#3b82f6);
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
+}
+
+/* Description */
+
+.middle_header_text1_3line{
+    font-size:18px;
+    line-height:1.8;
+    opacity:.9;
+}
+
+/* =============================
+TYPING EFFECT CURSOR
+============================= */
+
+#typingText::after{
+    content:"|";
+    animation:blink 1s infinite;
+}
+
+@keyframes blink{
+    50%{
+        opacity:0;
+    }
+}
+
+/* =============================
+FEATURE CARDS
+============================= */
+
+.photo__header ul{
+    display:flex;
+    justify-content:center;
+    gap:70px;
+    flex-wrap:wrap;
+    padding:80px 20px;
+}
+
+.photo__header li{
+    padding:35px;
+    border-radius:30px;
+    background:rgba(255,255,255,.04);
+    backdrop-filter:blur(20px);
+    border:1px solid rgba(255,255,255,.05);
+    transform:translateY(0);
+}
+
+.photo__header li:hover{
+    transform:translateY(-12px) scale(1.05);
+    background:rgba(255,255,255,.1);
+}
+
 /*------------------------------------------------our_services----------------------*/
 .our_services {
     flex-direction: column;
@@ -615,136 +495,6 @@ header{
     border-radius: 50%;
     box-shadow: 0 0 0 4px rgba(24, 207, 171, 0.3);
     cursor: pointer;
-}
-/*----------------------------------------------------*/
-
-/* ======================================
-ULTRA PREMIUM CONTACT SECTION
-====================================== */
-
-.what_people_say_about_theHam{
-    position:relative;
-    padding:160px 20px;
-    text-align:center;
-    color:white;
-    overflow:hidden;
-}
-
-/* Background premium gradient + parallax feel */
-.what_people_say_about_theHam::before{
-    content:"";
-    position:absolute;
-    inset:0;
-
-    background:
-        radial-gradient(circle at 20% 20%, rgba(24,207,171,.25), transparent 60%),
-        radial-gradient(circle at 80% 80%, rgba(59,130,246,.25), transparent 60%),
-        linear-gradient(to top,#020617,#0b1120);
-
-    z-index:1;
-}
-
-/* Floating particles effect */
-.what_people_say_about_theHam::after{
-    content:"";
-    position:absolute;
-    inset:0;
-    background-image:url("https://www.transparenttextures.com/patterns/cubes.png");
-    opacity:.05;
-    z-index:1;
-}
-
-/* Title */
-
-.double_line{
-    position:relative;
-    z-index:2;
-
-    font-size:33px;
-    font-weight:700;
-
-    background:linear-gradient(90deg,#18cfab,#3b82f6);
-    -webkit-background-clip:text;
-    -webkit-text-fill-color:transparent;
-
-    margin-bottom:50px;
-}
-
-/* Contact card */
-
-.container_contact{
-    position:relative;
-    z-index:2;
-
-    max-width:900px;
-    margin:auto;
-
-    padding:50px 60px;
-
-    font-size:18px;
-    line-height:1.9;
-
-    background:rgba(255,255,255,.04);
-    backdrop-filter: blur(25px);
-
-    border-radius:40px;
-    border:1px solid rgba(255,255,255,.08);
-
-    box-shadow:
-        0 30px 80px rgba(0,0,0,.5),
-        inset 0 0 40px rgba(255,255,255,.02);
-
-    transition:.5s ease;
-}
-
-/* Hover premium lift */
-
-.container_contact:hover{
-    transform:translateY(-15px) scale(1.01);
-    box-shadow:
-        0 40px 100px rgba(24,207,171,.2);
-}
-
-/* Text styling */
-
-.container_contact p,
-.container_contact{
-    color:#e2e8f0;
-}
-
-/* CTA button (if you add later) */
-
-.contact_cta{
-    display:inline-block;
-    margin-top:40px;
-    padding:18px 40px;
-
-    border-radius:30px;
-    background:linear-gradient(90deg,#18cfab,#3b82f6);
-    color:white;
-    text-decoration:none;
-    font-weight:600;
-
-    box-shadow:0 15px 40px rgba(24,207,171,.3);
-}
-
-.contact_cta:hover{
-    transform:translateY(-5px);
-}
-
-/* Responsive */
-
-@media(max-width:768px){
-
-.double_line{
-    font-size:38px;
-}
-
-.container_contact{
-    padding:30px 25px;
-    font-size:16px;
-}
-
 }
 /*----------------------------------------footer-------------------- */
 footer{
